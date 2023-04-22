@@ -1,0 +1,187 @@
+/* --------- ESTILOS GENERALES ------------  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100% !important;
+    height: 700px;
+    background-image: url(../images/Mentoring-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    width: 100%;
+    justify-content: end;
+}
+
+
+.imagen {
+    display: flex;
+    width: 50px;
+    height: auto;
+    margin: 5px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    height: 200px;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+footer img {
+    width: 70px;
+    height: 70px;
+    justify-content: flex-start;
+}
+
+.d-flex {
+    align-items: center;
+    padding-right: 25px;
+}
+
+
+/* ESTRUCTURA GRID */
+
+.contenedorTotal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3columnas */
+    grid-template-rows: 0.2fr 1fr 1fr 0.1fr;
+    /* 4filas */
+    grid-template-areas:
+        "header header header"
+        "main texto texto"
+        "contenido1 contenido2 contenido3"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+}
+
+.video {
+    grid-area: main;
+    display: flexbox;
+    margin: 14px;
+    justify-content: space-evenly;
+}
+
+.texto {
+    grid-area: texto;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+    color: rgb(20, 12, 2);
+    margin-top: 50px;
+}
+
+.caja1 {
+    grid-area: contenido1;
+}
+
+.caja2 {
+    grid-area: contenido2;
+}
+
+.caja3 {
+    grid-area: contenido3;
+}
+
+.dosColumnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,2 1fr 1fr 0,2;
+    grid-template-areas: "header header" "formulario contacto" "footer footer";
+}
+
+
+
+/*TAMAÑO CELULAR*/
+
+/*INICIO*/
+@media screen and (max-width: 498px) {
+
+    .contenedorTotal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3 1fr 0.5 0.5 0.5 0.5 0.2;
+        grid-template-areas:
+            "header"
+            "main"
+            "texto"
+            "contenido1"
+            "contenido2"
+            "contenido3"
+            "fotter";
+    }
+
+    .dosColumnas {
+        grid-template-columns: 100%;
+        grid-template-rows: 0.3fr 1fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "contacto "
+            "formulario"
+            "footer";
+
+
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.video {
+    display: flex;
+    grid-area: main;
+    width: 400px;
+    height: auto;
+}
+
+.texto {
+    grid-area: texto;
+}
+
+.caja1 {
+    grid-area: contenido1;
+}
+
+.caja2 {
+    grid-area: contenido2;
+}
+
+.caja3 {
+    grid-area: contenido3;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.contacto {
+    width: 480px;
+    margin: 15px;
+    grid-area: contacto;
+    text-align: justify;
+}
+
+.formulario {
+    justify-content:space-between;
+    width: 440px;
+    grid-area: formulario;
+    margin-bottom: 25px;
+}

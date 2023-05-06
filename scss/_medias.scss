@@ -1,0 +1,38 @@
+/*TAMAÑO CELULAR*/
+
+/*INICIO*/
+@media screen and (max-width: 500px) {
+
+    .contenedorTotal {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "main"
+            "texto"
+            "contenido1"
+            "contenido2"
+            "contenido3";
+    }
+
+    .dosColumnas {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "formulario" "contacto";
+    }
+
+    #video {
+        width: 400px;
+    }
+
+    .main img {
+        width: 300px;
+    }
+    .formulario{
+        margin: 20px;
+    }
+.titu{
+    font-size: 15px;
+}
+}

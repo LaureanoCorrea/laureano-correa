@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>Coaching</title>
 
     <link rel="shortcut icon" href="../images/laureles.png" type="image/x-icon">
 
@@ -22,100 +22,209 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
-<body class="container-fluid">
-    <!--cabecera bootstrap-->
-    <header class="cabecera row header">
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
-            <div class="container-fluid">
-                <img class="navbar-brand" src="../images/logo-web-320x60.png" href="../index.html">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/coaching-personal.html">Coaching Personal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/coaching-networkmarketing.html">Coaching
-                                Networkmarketing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/mentorias.html">mentorias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+<body>
+    <!-- menu nav bootstrap -->
+    <nav class="navbar navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;"> <img src="../images/logo-web-320x60.png" alt="purple">
+                    </font>
+                </font>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">
+                            </font>
+                        </font>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">INICIO</font>
+                                </font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/coaching-personal.html">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">COACHING PERSONAL</font>
+                                </font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/coaching-networkmarketing.html">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">COACHING NETWORKMARKETING</font>
+                                </font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/mentorias.html">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">MENTORIAS</font>
+                                </font>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">CONTACTO</font>
+                                </font>
+                            </a>
+                        </li>
+                </div>
             </div>
-
-        </nav>
-
+        </div>
+    </nav>
+    <!-- menu nav bootstrap -->
     </header>
 
     <section class="dosColumnas">
 
         <section class="formulario">
-            <!-- FORMULARIO DE CONTACTO BOOTSTRAP -->
-            <form class="row g-3 needs-validation was-validated" novalidate="">
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="" required="">
-                    <div class="valid-feedback">
-                        Perfecto!
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" value="" required="">
-                        <div class="valid-feedback">
-                            Perfecto!
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
-                            <label class="form-check-label" for="invalidCheck">
-                                Acepto los Terminos y Condiciones
-                            </label>
-                            <div class="invalid-feedback">
-                                Debes aceptar los terminos y condiciones para continuar.
+            <div class="row">
+
+                <div class="col-sm-7 col-sm-offset-1">
+                    <h2 class="section-title mb-20">
+                        ¿CUÁL ES TU CONSULTA?
+                    </h2>
+                    <form action="" name="form" id="form" method="POST" accept-charset="UTF-8"
+                        enctype="multipart/form-data" class="form contact-form form-inscripcion">
+                        <input type="hidden" name="zf_referrer_name" value="">
+                        <input type="hidden" name="zf_redirect_url" value="">
+                        <input type="hidden" id="zc_gad" name="zc_gad" value="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--Nombre-->
+                                <div class="form-group">
+                                    <input type="text" class="input-lg  form-control" placeholder="Nombre*"
+                                        maxlength="255" name="Name_First" fieldtype="7/">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="input-lg  form-control" placeholder="Apellidos*"
+                                        maxlength="255" name="Name_Last" fieldtype="7/">
+                                </div>
+                                <!--Email-->
+                                <div class="form-group">
+                                    <input type="text" class="input-lg  form-control" placeholder="Email*"
+                                        maxlength="255" name="Email" value="" fieldtype="9/">
+                                </div>
+                                <!--Dropdown-->
+                                <div class="form-group">
+                                    <select name="Dropdown">
+                                        <option selected="true" value="-Select-">Pais*</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Brasil">Brasil</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="España">España</option>
+                                        <option value="México">México</option>
+                                        <option value="Panamá">Panamá</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Perú">Perú</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Otros">Otros</option>
+                                    </select>
+                                </div>
+                                <!--Dropdown 2-->
+                                <div class="form-group">
+                                    <select name="Dropdown1">
+                                        <option selected="true" value="-Select-">¿Eres coach?*</option>
+                                        <option value="No">No</option>
+                                        <option value="Sí">Sí</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!--Multi Line-->
+                                <div class="form-group">
+                                    <textarea class="input-lg  form-control" placeholder="Comentarios" name="MultiLine"
+                                        maxlength="65535"></textarea>
+                                    <p class="centro">Indicanos los detalles de tu solicitud o si no encuentras lo que buscas
+                                        dejanos tu petición aquí</p>
+                                </div>
+                                <!--Terms and Conditions-->
+                                <div class="tempContDiv " elemid="tempcontdiv">
+                                    <div class="termsContainer">
+                                        <div>
+                                            <p class="MsoNormal align-left" style="text-align: left"><b><span
+                                                        style="color: rgb(68, 68, 68)" class="colour"><span
+                                                            style="font-family: lato, sans-serif" class="font"><span
+                                                                style="font-size: 10.6667px" class="size">ESCUELA
+                                                                PURPLE TEAM </span></span></span></b><span
+                                                    style="color: rgb(68, 68, 68)" class="colour"><span
+                                                        style="font-family: lato, sans-serif" class="font"><span
+                                                            style="font-size: 10.6667px" class="size">tratará sus
+                                                            datos personales para contestar su solicitud de contacto
+                                                            o de información, en base al consentimiento otorgado al
+                                                            remitirnos el presente formulario. Puede obtener más
+                                                            información en nuestra </span></span></span><a
+                                                    target="_blank" rel="noopener noreferrer" href=""><span
+                                                        style="color: rgb(0, 136, 148)" class="colour"><span
+                                                            style="font-family: lato, sans-serif" class="font"><span
+                                                                style="font-size: 10.6667px" class="size">Política
+                                                                de Privacidad</span></span></span></a><span
+                                                    style="color: rgb(68, 68, 68)" class="colour"><span
+                                                        style="font-family: lato, sans-serif" class="font"><span
+                                                            style="font-size: 10.6667px"
+                                                            class="size"></span></span></span><a target="_blank"
+                                                    rel="noopener noreferrer" href=""><span
+                                                        style="color: rgb(0, 136, 148)" class="colour"><span
+                                                            style="font-family: lato, sans-serif" class="font"><span
+                                                                style="font-size: 10.6667px"
+                                                                class="size"></span></span></span></a><span
+                                                    style="color: rgb(68, 68, 68)" class="colour"><span
+                                                        style="font-family: lato, sans-serif" class="font"><span
+                                                            style="font-size: 10.6667px"
+                                                            class="size">.</span></span></span><br>
+                                            </p>
+                                            <div><br></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input class="checkBoxType flLeft" name="TermsConditions" type="checkbox">
+                                    <label>
+                                        Deseo mantenerme informado de los productos y servicios ofrecidos
+                                    </label>
+                                </div>
+                                <!--Single Line-->
+                                <input type="hidden" name="SingleLine1" value="Solicitud información" fieldtype="1"
+                                    maxlength="255">
+                                <!--Single Line-->
+                                <input type="hidden" name="SingleLine3" value="Activo" fieldtype="1" maxlength="255">
+                                <!--Single Line-->
+                                <input type="hidden" name="SingleLine2" value="Web - Formulario contacto" fieldtype="1"
+                                    maxlength="255">
+                                <input type="hidden" name="SingleLine4" value="Sí" fieldtype="1" maxlength="255">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
-                    </div>
-            </form>
-        </section>
-
-        <section class="contacto">
-            <h2> Contacta con Nosotros!</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nisi necessitatibus neque cupiditate et illum
-            odit.
-            Quo quam, repudiandae minima veniam voluptatum eligendi facilis mollitia. Qui, aspernatur. Perferendis id,
-            neque
-            maiores omnis nobis voluptas eaque laborum reiciendis, iste, ut error veritatis quidem repudiandae ipsam
-            quam.
-            Voluptate mollitia necessitatibus perspiciatis consequatur?
+                    </form>
+                </div>
+            </div>
+            </div>
         </section>
 
     </section>

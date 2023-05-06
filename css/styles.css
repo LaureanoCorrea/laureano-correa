@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.contenedorTotal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "main       texto      texto" "contenido1 contenido2 contenido3";
+}
+
+.main {
+  grid-area: main;
+  text-align: center;
+  margin: 15px;
+}
+.main img {
+  padding-top: 32px;
+  width: 750px;
+}
+.main h1 {
+  margin-top: 32px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.texto {
+  grid-area: texto;
+  text-align: center;
+  font-size: 18px;
+  margin: 10% 30px 30px 30px;
+}
+.texto h3 {
+  font-size: 35px;
+}
+
+.box1 {
+  grid-area: contenido1;
+  margin: 33px 25px 25px 25px;
+  text-align: inherit;
+}
+.box1 h5 {
+  font-weight: bold;
+}
+
+.box2 {
+  grid-area: contenido2;
+  margin: 33px 25px 25px 25px;
+  text-align: inherit;
+}
+.box2 h5 {
+  font-weight: bold;
+}
+
+.box3 {
+  grid-area: contenido3;
+  margin: 33px 25px 25px 25px;
+  text-align: inherit;
+}
+.box3 h5 {
+  font-weight: bold;
+}
+
+.dosColumnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "formulario formulario" "contacto contacto";
+}
+
+.formulario {
+  grid-area: formulario;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 60px 0;
+}
+
+.contacto {
+  grid-area: contacto;
+  text-align: center;
+  font-size: 18px;
+  margin: 10% 30px 30px 30px;
+  background-color: azure;
+}
+
+.form-group {
+  margin-bottom: 3px;
+}
+
+.centro {
+  text-align: center;
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  background-color: black;
+  height: 200px;
+  justify-content: center;
+  color: antiquewhite;
+}
+
+footer img {
+  width: 70px;
+  height: 70px;
+  justify-content: flex-start;
+}
+
+.d-flex {
+  align-items: center;
+  padding-right: 25px;
+}
+
+/*TAMAÑO CELULAR*/
+/*INICIO*/
+@media screen and (max-width: 500px) {
+  .contenedorTotal {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "main" "texto" "contenido1" "contenido2" "contenido3";
+  }
+  .dosColumnas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "formulario" "contacto";
+  }
+  #video {
+    width: 400px;
+  }
+  .main img {
+    width: 300px;
+  }
+  .formulario {
+    margin: 20px;
+  }
+  .titu {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

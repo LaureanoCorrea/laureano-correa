@@ -1,0 +1,72 @@
+.contenedorTotal {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "main       texto      texto" "contenido1 contenido2 contenido3";
+}
+.main {
+	grid-area: main;
+	text-align: center;
+	margin: 15px;
+	img {
+		padding-top: 32px;
+		width: 750px;
+	}
+	h1 {
+		margin-top: 32px;
+		font-size: 3rem;
+		font-weight: bold;
+	}
+}
+.texto {
+	grid-area: texto;
+	text-align: center;
+	font-size: 18px;
+	margin: 10% 30px 30px 30px;
+	h3 {
+		font-size: 35px;
+	}
+}
+.box1 {
+	grid-area: contenido1;
+	margin: 33px 25px 25px 25px;
+	text-align: inherit;
+	h5 {
+		font-weight: bold;
+	}
+}
+.box2 {
+	grid-area: contenido2;
+	margin: 33px 25px 25px 25px;
+	text-align: inherit;
+	h5 {
+		font-weight: bold;
+	}
+}
+.box3 {
+	grid-area: contenido3;
+	margin: 33px 25px 25px 25px;
+	text-align: inherit;
+	h5 {
+		font-weight: bold;
+	}
+}
+.dosColumnas {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "formulario formulario" "contacto contacto";
+}
+.formulario {
+	grid-area: formulario;
+	margin-top: 50px;
+	margin-left: 50px;
+	padding: 60px 0;
+}
+.contacto {
+	grid-area: contacto;
+	text-align: center;
+	font-size: 18px;
+	margin: 10% 30px 30px 30px;
+	background-color: $background-color_1;
+}

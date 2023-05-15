@@ -14,8 +14,8 @@ body {
 .contenedorTotal {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "main       texto      texto" "contenido1 contenido2 contenido3";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "main       main      main" "texto texto texto" "contenido1 contenido2 contenido3";
 }
 
 .main {

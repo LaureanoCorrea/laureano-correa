@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: clip;
+  overflow-x: auto;
 }
 
 #video {
@@ -12,6 +12,7 @@
 }
 
 .card {
+  width: 400px;
   margin-left: 25%;
   justify-content: space-between;
 }
@@ -28,9 +29,6 @@
   font-weight: 600px;
 }
 
-.beneficio {
-  padding: 0;
-}
 .beneficio h2 {
   text-align: center;
   margin-top: 22px;
@@ -54,7 +52,7 @@
 }
 
 .recuadro-info {
-  width: 100%;
+  width: 95%;
   border: solid 2px darkmagenta;
   border-radius: 10px;
   padding: 15px;
@@ -123,6 +121,23 @@
   text-decoration: underline;
 }
 
+.espacio {
+  margin-left: 15px;
+}
+
+.logosTittle {
+  text-align: center;
+  font-weight: 700px;
+}
+
+.containerLogos {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 12px auto 18px auto;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
@@ -163,12 +178,11 @@ body a {
   grid-area: video;
 }
 .vid img {
-  width: 100%;
+  width: auto;
 }
 .vid h3 {
   margin-top: 43px;
   text-align: center;
-  font-weight: 400;
 }
 .vid p {
   margin-top: 33px;
@@ -224,7 +238,7 @@ body a {
 
 .estrategia {
   margin-top: 33px;
-  margin-left: 21px;
+  margin-left: auto;
   grid-area: contenido1;
 }
 
@@ -238,6 +252,10 @@ body a {
 
 .estrategia3 {
   grid-area: contenido2;
+}
+
+.containerLogos {
+  grid-area: contenido3;
 }
 
 .dosColumnas {
@@ -288,6 +306,9 @@ body a {
 }
 
 .MsoNormal {
+  text-align: left;
+  color: #444444;
+  font-family: lato, sans-serif;
   margin: 10px;
 }
 
@@ -324,13 +345,15 @@ footer img {
 
 /*TAMAÑO CELULAR*/
 /*INICIO*/
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 525px) {
   .contenedorTotal {
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "main" "video" "texto" "contenido1" "contenido2" "contenido3" "texto1" "texto2" "texto3";
   }
   .dosColumnas {
+    margin: 5px;
+    width: 98%;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     grid-template-areas: "formulario" "contacto";
@@ -345,7 +368,16 @@ footer img {
     padding: 0;
   }
   .main img {
+    display: block;
     width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  .vid {
+    margin: auto;
+  }
+  .estrategia {
+    width: auto;
     margin: 0;
     padding: 0;
   }
@@ -359,7 +391,7 @@ footer img {
   }
   .recuadro-info {
     width: auto;
-    margin: 3%;
+    margin: 3px;
   }
   .box1 {
     margin: 4%;
@@ -373,6 +405,11 @@ footer img {
   .texto2 {
     margin: 4%;
   }
+  .containerLogos img {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+  }
   .footer {
     padding: 16px;
     font-size: 12px;
@@ -381,15 +418,25 @@ footer img {
     width: 90%;
     margin: 3%;
   }
+  .beneficio {
+    margin: 5px 0;
+  }
   .beneficio h2 {
     font-size: 2rem;
+  }
+  .beneficio h3 {
+    font-size: 2rem;
+  }
+  .beneficio img {
+    margin: 0;
+    width: fit-contents;
   }
   .navbar {
     width: 100%;
   }
 }
 /* TAMAÑO TABLET*/
-@media only screen and (min-width: 576px) and (max-width: 967px) {
+@media only screen and (min-width: 526px) and (max-width: 967px) {
   .contenedorTotal {
     grid-template-columns: auto auto auto;
     grid-template-rows: repeat(5, auto);

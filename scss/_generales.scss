@@ -2,16 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: clip;
+    overflow-x: auto;
 }
 
 
 
-#video{width: 700px;
-height: 400px;
+#video {
+    width: 700px;
+    height: 400px;
 }
 
 .card {
+    width: 400px;
     margin-left: 25%;
     justify-content: space-between;
 }
@@ -23,20 +25,23 @@ height: 400px;
     margin-top: 60px;
     margin-bottom: 45px;
     width: auto;
-    h2{
+
+    h2 {
         font-weight: 600px;
     }
 }
 
 .beneficio {
-    padding: 0;
-    h2{
+
+    // margin-left: 15px;
+    h2 {
         text-align: center;
         margin-top: 22px;
         margin-bottom: 10px;
         font-size: 3rem;
         font-weight: 600;
     }
+
 
     h3 {
         font-weight: 600;
@@ -57,7 +62,7 @@ height: 400px;
 }
 
 .recuadro-info {
-    width: 100%;
+    width: 95%;
     border: solid 2px darkmagenta;
     border-radius: 10px;
     padding: 15px;
@@ -103,12 +108,13 @@ height: 400px;
     background-color: green;
     width: 30%;
     margin: 5%;
-    
+
 }
 
 .c-theme--margin {
     margin-bottom: 7rem;
-    h2{
+
+    h2 {
         margin-bottom: 23px;
     }
 }
@@ -124,7 +130,24 @@ height: 400px;
 .flex {
     display: flex;
 }
-.subrayado{
+
+.subrayado {
     text-decoration: underline;
 }
 
+.espacio {
+    margin-left: 15px;
+}
+
+.logosTittle{
+    text-align: center;
+    font-weight: 700px;
+}
+
+.containerLogos{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 12px auto 18px auto;
+}

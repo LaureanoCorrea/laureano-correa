@@ -57,7 +57,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/coaching-networkmarketing.html">
+                                <a class="nav-link" href="../pages/coaching-network.html">
                                     COACHING NETWORKMARKETING
                                 </a>
                             </li>
@@ -78,6 +78,8 @@
         <!-- menu nav bootstrap -->
     </header>
 
+    <!-- formulario de contacto -->
+
     <section class="dosColumnas">
         <div id="arriba" class="formulario">
             <div class="row">
@@ -87,24 +89,25 @@
                     </h2>
                     <form action="" name="form" id="form" method="POST" accept-charset="UTF-8"
                         enctype="multipart/form-data" class="form contact-form form-inscripcion">
-                        <input type="hidden" name="zf_referrer_name" value="">
-                        <input type="hidden" name="zf_redirect_url" value="">
-                        <input type="hidden" id="zc_gad" name="zc_gad" value="">
                         <div class="row">
                             <div class="col-md-12">
                                 <!--Nombre-->
                                 <div class="form-group">
+                                    <label for="inputNombre"></label>
                                     <input type="text" class="input-lg  form-control" placeholder="Nombre*"
-                                        maxlength="255" name="Name_First" fieldtype="7/">
+                                        maxlength="255" id="inputNombre">
                                 </div>
+                                <!-- Apellido -->
                                 <div class="form-group">
+                                    <label for="imputApellido"></label>
                                     <input type="text" class="input-lg  form-control" placeholder="Apellidos*"
-                                        maxlength="255" name="Name_Last" fieldtype="7/">
+                                        maxlength="255" id="inputApellido">
                                 </div>
                                 <!--Email-->
                                 <div class="form-group">
+                                    <label for="Email"></label>
                                     <input type="text" class="input-lg  form-control" placeholder="Email*"
-                                        maxlength="255" name="Email" value="" fieldtype="9/">
+                                        maxlength="255" id="Email">
                                 </div>
                                 <!--Dropdown-->
                                 <div class="form-group">
@@ -130,34 +133,25 @@
                                 <div class="tempContDiv " elemid="tempcontdiv">
                                     <div class="termsContainer">
                                         <div>
-                                            <p class="MsoNormal align-left" style="text-align: left"><b><span
-                                                        style="color: rgb(68, 68, 68)" class="colour"><span
-                                                            style="font-family: lato, sans-serif" class="font"><span
-                                                                class="size">ESCUELA
-                                                                PURPLE TEAM </span></span></span></b><span
-                                                    style="color: rgb(68, 68, 68)" class="colour"><span
-                                                        style="font-family: lato, sans-serif" class="font"><span
-                                                            class="size">tratará sus
-                                                            datos personales para contestar su solicitud de contacto
-                                                            o de información, en base al consentimiento otorgado al
-                                                            remitirnos el presente formulario. Puede obtener más
-                                                            información en nuestra </span></span></span><a
-                                                    target="_blank" rel="noopener noreferrer" href=""><span
-                                                        style="color: rgb(0, 136, 148)" class="colour"><span
-                                                            style="font-family: lato, sans-serif" class="font"><span
-                                                                class="size">Política
-                                                                de Privacidad</span></span></span></a><span
-                                                    style="color: rgb(68, 68, 68)" class="colour"><span
-                                                        style="font-family: lato, sans-serif" class="font"><span
-                                                            class="size"></span></span></span><a target="_blank"
-                                                    rel="noopener noreferrer" href=""><span
-                                                        style="color: rgb(0, 136, 148)" class="colour"><span
-                                                            style="font-family: lato, sans-serif" class="font"><span
-                                                                style="font-size: 10.6667px"
-                                                                class="size"></span></span></span></a><span
-                                                    style="color: rgb(68, 68, 68)" class="colour"><span
-                                                        style="font-family: lato, sans-serif" class="font"><span
-                                                            class="size">.</span></span></span>
+                                            <p class="MsoNormal align-left">
+                                                <span class="size">
+                                                    ESCUELA PURPLE TEAM
+                                                </span>
+                                                <span class="size">
+                                                    tratará sus
+                                                    datos personales para contestar su solicitud de contacto
+                                                    o de información, en base al consentimiento otorgado al
+                                                    remitirnos el presente formulario. Puede obtener más
+                                                    información en nuestra
+                                                </span>
+                                                <a target="_blank" rel="noopener noreferrer" href="#">
+                                                    <span class="size">
+                                                        Política de Privacidad
+                                                    </span>
+                                                </a>
+                                                <span class="size">
+                                                    <a target="_blank" rel="noopener noreferrer" href="#"></a>
+                                                </span>
                                         </div>
                                     </div>
                                 </div>
@@ -167,15 +161,6 @@
                                         Deseo mantenerme informado de los productos y servicios ofrecidos
                                     </label>
                                 </div>
-                                <!--Single Line-->
-                                <input type="hidden" name="SingleLine1" value="Solicitud información" fieldtype="1"
-                                    maxlength="255">
-                                <!--Single Line-->
-                                <input type="hidden" name="SingleLine3" value="Activo" fieldtype="1" maxlength="255">
-                                <!--Single Line-->
-                                <input type="hidden" name="SingleLine2" value="Web - Formulario contacto" fieldtype="1"
-                                    maxlength="255">
-                                <input type="hidden" name="SingleLine4" value="Sí" fieldtype="1" maxlength="255">
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </div>
@@ -221,21 +206,24 @@
                         class="beneficio">
                     <h4 class="beneficio">Ejerce como coach independiente:</h4>
                     <p class="beneficio">Ayuda a otros a lograr sus objetivos, transformando su ser ejerciendo tu
-                        profesión.</p>
+                        profesión.
+                    </p>
                 </div>
                 <div class="beneficio col-12 col-md-4"><img
                         src="https://axon-lp-media.s3.us-east-2.amazonaws.com/imagenes/formacion-coach/book.svg"
                         class="beneficio">
                     <h4 class="beneficio">Brinda clases de coaching:</h4>
                     <p class="beneficio">Enseña clases de coaching empoderando a las personas con esta gran
-                        disciplina.</p>
+                        disciplina.
+                    </p>
                 </div>
                 <div class="beneficio col-12 col-md-4"><img
                         src="https://axon-lp-media.s3.us-east-2.amazonaws.com/imagenes/formacion-coach/stats.svg"
                         class="beneficio hh">
                     <h4 class="beneficio">Ofrece consultoría en empresas:</h4>
                     <p class="beneficio">Transformate en consultor externo logrando equipos de trabajo eficientes y
-                        proactivos.</p>
+                        proactivos.
+                    </p>
                 </div>
             </div>
         </div>
@@ -278,7 +266,9 @@
             </a>
             <a href="mailto:loriensdesign@gmail.com">
                 <div class="flex-grow-1 ms-3">
-                    Este sitio fue creado a puro pulmón (by Loriens Design)
+                    <p>
+                        Este sitio fue creado a puro pulmón (by Loriens Design)
+                    </p>
                 </div>
         </div>
         </a>
@@ -291,11 +281,12 @@
             </a>
             <a href="https://www.facebook.com/laureano.soy.yo">
                 <div class="flex-grow-1 ms-3">
-                    Siguenos en nuestras Redes Sociales!
+                    <p>
+                        Siguenos en nuestras Redes Sociales!
+                    </p>
                 </div>
             </a>
         </div>
-
 
     </footer>
 

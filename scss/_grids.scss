@@ -35,13 +35,13 @@
 	grid-area: video;
 
 	img{
-		width: 100%;
+		width: auto;
 	}
 
 	h3 {
 		margin-top: 43px;
 		text-align: center;
-		font-weight: 400;
+		
 	}
 
 	p {
@@ -104,7 +104,7 @@
 
 .estrategia {
 	margin-top: 33px;
-	margin-left: 21px;
+	margin-left: auto;
 	grid-area: contenido1;
 }
 
@@ -118,6 +118,10 @@
 
 .estrategia3 {
 	grid-area: contenido2;
+}
+
+.containerLogos{
+	grid-area: contenido3;
 }
 
 .dosColumnas{

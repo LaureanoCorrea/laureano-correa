@@ -1,7 +1,7 @@
 /*TAMAÑO CELULAR*/
 
 /*INICIO*/
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 525px) {
 
     .contenedorTotal {
         grid-template-columns: auto;
@@ -21,7 +21,8 @@
 
 
     .dosColumnas {
-        
+        margin: 5px;
+        width: 98%;
         grid-template-columns: 100%;
         grid-template-rows: auto auto;
         grid-template-areas: "formulario" "contacto";
@@ -39,10 +40,22 @@
         }
 
         img {
+            display: block;
             width: 90%;
             margin: 0;
             padding: 0;
         }
+    }
+
+    .vid {
+        margin: auto;
+
+    }
+
+    .estrategia {
+        width: auto;
+        margin: 0;
+        padding: 0;
     }
 
     .formulario {
@@ -57,7 +70,7 @@
 
     .recuadro-info {
         width: auto;
-        margin: 3%;
+        margin: 3px;
     }
 
     .box1 {
@@ -76,6 +89,14 @@
         margin: 4%;
     }
 
+    .containerLogos{
+        img{
+            width: 100%;
+            justify-content: space-evenly;
+            margin: auto;
+        }
+    }
+
     .footer {
         padding: 16px;
         font-size: 12px;
@@ -87,8 +108,18 @@
     }
 
     .beneficio {
+        margin: 5px 0;
         h2 {
             font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        img {
+            margin: 0;
+            width: fit-contents;
         }
     }
 
@@ -104,19 +135,19 @@
 
 /* TAMAÑO TABLET*/
 
-@media only screen and (min-width: 576px) and (max-width: 967px){
+@media only screen and (min-width: 526px) and (max-width: 967px) {
 
     .contenedorTotal {
         grid-template-columns: auto auto auto;
         grid-template-rows: repeat(5, auto);
         grid-template-areas:
-        "main" "." "."
-         "video" "." "."
-         "texto2" "." "."
-         "texto" "." "."
-         "contenido1" "." "."
-         "contenido2" "." "."
-         "contenido3" "." ".";
+            "main" "." "."
+            "video" "." "."
+            "texto2" "." "."
+            "texto" "." "."
+            "contenido1" "." "."
+            "contenido2" "." "."
+            "contenido3" "." ".";
     }
 
 
@@ -129,7 +160,8 @@
             margin: 3%;
             font-size: 95%;
         }
-        h4{
+
+        h4 {
             font-size: 75%;
         }
 
@@ -140,9 +172,10 @@
         height: 100%;
         margin: 2%;
     }
-        .beneficio{
-            margin-top: 22px;
-        }
 
-   
+    .beneficio {
+        margin-top: 22px;
+    }
+
+
 }
